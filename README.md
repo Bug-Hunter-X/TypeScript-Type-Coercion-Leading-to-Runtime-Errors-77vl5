@@ -1,0 +1,3 @@
+# TypeScript Type Coercion Bug
+
+This repository demonstrates a common issue in TypeScript where type coercion can lead to runtime errors that aren't caught during compilation.  The `add` function is declared to accept two numbers, but the program calls it with a number and a string. TypeScript allows this, but the result is `NaN` at runtime.  The solution shows how to use type guards to prevent this.
